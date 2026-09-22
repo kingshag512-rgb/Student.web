@@ -1,0 +1,353 @@
+/* =================================
+   ADMISSION PAGE
+================================= */
+
+.admission-page {
+  min-height: 100vh;
+  background: #f5f8ff;
+  color: #1f2937;
+}
+
+/* =================================
+   Admission Header
+================================= */
+
+.admission-header {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: white;
+}
+
+.admission-header h1 {
+  margin: 0 0 15px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.admission-header p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.admission-header button {
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  background: white;
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admission-header button:hover {
+  background: #e0e7ff;
+  transform: translateY(-3px);
+}
+
+/* =================================
+   Common Sections
+================================= */
+
+.admission-info,
+.eligibility,
+.documents,
+.admission-process {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+.admission-info h2,
+.eligibility h2,
+.documents h2,
+.admission-process h2 {
+  text-align: center;
+  color: #1e3a8a;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.admission-info > p {
+  max-width: 800px;
+  margin: 0 auto 35px;
+  text-align: center;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+/* =================================
+   Admission Cards
+================================= */
+
+.admission-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.admission-card {
+  background: white;
+  padding: 30px 25px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  border-top: 4px solid #2563eb;
+}
+
+.admission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.15);
+}
+
+.admission-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 12px;
+  font-size: 19px;
+}
+
+.admission-card p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* =================================
+   Eligibility
+================================= */
+
+.eligibility {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.eligibility ul {
+  max-width: 750px;
+  margin: 30px auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.eligibility li {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 15px 20px 15px 50px;
+  background: #f8fafc;
+  border-radius: 8px;
+  color: #4b5563;
+}
+
+.eligibility li::before {
+  content: "✓";
+  position: absolute;
+  left: 18px;
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* =================================
+   Required Documents
+================================= */
+
+.document-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.document-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  border-left: 5px solid #2563eb;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.document-card:hover {
+  transform: translateX(5px);
+}
+
+.document-card h3 {
+  margin-top: 0;
+  color: #1e3a8a;
+  font-size: 18px;
+}
+
+.document-card p {
+  margin-bottom: 0;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* =================================
+   Admission Process
+================================= */
+
+.process-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.process-card {
+  position: relative;
+  background: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.process-card:hover {
+  transform: translateY(-7px);
+}
+
+.process-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.process-card h3 {
+  color: #1e3a8a;
+  margin: 10px 0;
+}
+
+.process-card p {
+  color: #6b7280;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* =================================
+   Call To Action
+================================= */
+
+.apply-section {
+  margin-top: 70px;
+  padding: 70px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+}
+
+.apply-section h2 {
+  margin: 0 0 12px;
+  font-size: 34px;
+}
+
+.apply-section p {
+  margin-bottom: 28px;
+  font-size: 17px;
+}
+
+.apply-section button {
+  border: none;
+  padding: 15px 35px;
+  border-radius: 9px;
+  background: white;
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-section button:hover {
+  background: #dbeafe;
+  transform: translateY(-3px);
+}
+
+/* =================================
+   Responsive Design
+================================= */
+
+@media (max-width: 900px) {
+
+  .admission-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .process-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .admission-header {
+    padding: 55px 20px;
+  }
+
+  .admission-header h1 {
+    font-size: 32px;
+  }
+
+  .admission-header p {
+    font-size: 16px;
+  }
+
+  .admission-info,
+  .eligibility,
+  .documents,
+  .admission-process {
+    width: 88%;
+    margin: 40px auto;
+  }
+
+  .admission-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .document-list {
+    grid-template-columns: 1fr;
+  }
+
+  .process-container {
+    grid-template-columns: 1fr;
+  }
+
+  .eligibility {
+    padding: 25px 20px;
+  }
+
+  .admission-info h2,
+  .eligibility h2,
+  .documents h2,
+  .admission-process h2 {
+    font-size: 26px;
+  }
+
+  .apply-section {
+    padding: 55px 20px;
+  }
+
+  .apply-section h2 {
+    font-size: 28px;
+  }
+
+  .admission-header button,
+  .apply-section button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

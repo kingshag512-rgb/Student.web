@@ -1,0 +1,124 @@
+/* =================================
+   NAVBAR
+================================= */
+
+nav {
+  width: 100%;
+  min-height: 70px;
+  padding: 0 6%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+
+  position: relative;
+  z-index: 1000;
+}
+
+/* School Name */
+
+nav h2 {
+  margin: 0;
+  margin-right: auto;
+
+  color: #1e3a8a;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Navigation Links */
+
+nav a {
+  position: relative;
+
+  color: #374151;
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  padding: 25px 5px;
+
+  transition: color 0.3s ease;
+}
+
+/* Hover */
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* Underline Animation */
+
+nav a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+
+  width: 0;
+  height: 3px;
+
+  background: #2563eb;
+  border-radius: 10px;
+
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* =================================
+   Mobile Navbar
+================================= */
+
+@media (max-width: 700px) {
+
+  nav {
+    min-height: auto;
+    padding: 18px 20px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+  }
+
+  nav h2 {
+    width: 100%;
+    margin: 0 0 5px;
+
+    text-align: center;
+    font-size: 22px;
+  }
+
+  nav a {
+    padding: 8px 5px;
+    font-size: 14px;
+  }
+
+  nav a::after {
+    bottom: 2px;
+  }
+}
+
+/* =================================
+   Small Mobile
+================================= */
+
+@media (max-width: 400px) {
+
+  nav {
+    gap: 8px 14px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,426 @@
+/* ================================
+   HOME PAGE
+================================ */
+
+.home-page {
+  min-height: 100vh;
+  background: #f5f8ff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.home-hero {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 60px 8%;
+  gap: 50px;
+
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(59, 130, 246, 0.15),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(139, 92, 246, 0.15),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #f8fbff,
+      #eef3ff
+    );
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.home-content {
+  max-width: 620px;
+}
+
+
+/* Badge */
+
+.welcome-badge {
+  display: inline-block;
+
+  padding: 9px 17px;
+  margin-bottom: 20px;
+
+  color: #2563eb;
+  background: #dbeafe;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 30px;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+/* Heading */
+
+.home-content h1 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 58px;
+  line-height: 1.1;
+
+  font-weight: 800;
+}
+
+.home-content h1 span {
+  display: block;
+
+  color: #2563eb;
+}
+
+
+/* Paragraph */
+
+.home-content p {
+  max-width: 550px;
+
+  margin: 25px 0 32px;
+
+  color: #64748b;
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.home-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+
+/* Apply */
+
+.apply-btn {
+  padding: 15px 28px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+  font-size: 16px;
+
+  box-shadow:
+    0 10px 25px rgba(37, 99, 235, 0.25);
+
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 15px 30px rgba(37, 99, 235, 0.35);
+}
+
+
+/* Learn */
+
+.learn-btn {
+  padding: 13px 27px;
+
+  color: #2563eb;
+
+  background: white;
+
+  border: 2px solid #dbeafe;
+
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.learn-btn:hover {
+  background: #2563eb;
+  color: white;
+
+  transform: translateY(-3px);
+}
+
+
+/* ================================
+   RIGHT SIDE
+================================ */
+
+.home-image {
+  width: 420px;
+  height: 420px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Circle */
+
+.circle-bg {
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #dbeafe,
+    #ede9fe
+  );
+
+  box-shadow:
+    0 25px 60px rgba(37, 99, 235, 0.12);
+}
+
+
+/* Card */
+
+.school-card {
+  position: relative;
+  z-index: 2;
+
+  width: 260px;
+
+  padding: 35px 25px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  border: 1px solid white;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 20px 50px rgba(15, 23, 42, 0.12);
+
+  backdrop-filter: blur(10px);
+
+  animation: float 4s ease-in-out infinite;
+}
+
+
+/* Icon */
+
+.school-icon {
+  width: 90px;
+  height: 90px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #6366f1
+  );
+
+  border-radius: 22px;
+
+  font-size: 45px;
+
+  box-shadow:
+    0 15px 30px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Card Text */
+
+.school-card h3 {
+  margin: 20px 0 8px;
+
+  color: #172554;
+
+  font-size: 21px;
+}
+
+.school-card p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   ANIMATION
+================================ */
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .home-hero {
+    padding: 50px 5%;
+  }
+
+  .home-content h1 {
+    font-size: 46px;
+  }
+
+  .home-image {
+    width: 350px;
+    height: 350px;
+  }
+
+  .circle-bg {
+    width: 290px;
+    height: 290px;
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+  .home-hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 55px 20px 70px;
+  }
+
+  .home-content {
+    max-width: 600px;
+  }
+
+  .home-content h1 {
+    font-size: 42px;
+  }
+
+  .home-content p {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 16px;
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+
+  .home-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .circle-bg {
+    width: 250px;
+    height: 250px;
+  }
+
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+  .home-content h1 {
+    font-size: 35px;
+  }
+
+  .welcome-badge {
+    font-size: 11px;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+  }
+
+  .apply-btn,
+  .learn-btn {
+    width: 220px;
+    box-sizing: border-box;
+  }
+
+  .home-image {
+    width: 270px;
+    height: 270px;
+  }
+
+  .circle-bg {
+    width: 225px;
+    height: 225px;
+  }
+
+  .school-card {
+    width: 210px;
+    padding: 28px 18px;
+  }
+
+}
